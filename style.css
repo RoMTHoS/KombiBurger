@@ -1,0 +1,870 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  padding: 20px 20px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.logo {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-decoration: none;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #ff0000;
+}
+
+.navbar_list {
+  display: flex;
+  position: relative;
+}
+
+.navbar_list li {
+  list-style: none;
+  font-size: 1.25em;
+}
+
+.navbar_list a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+.btn-reserve {
+  padding: 10px 20px;
+  background: #ff0000;
+  margin-top: -10px;
+  text-transform: uppercase;
+}
+
+.btn-reserve:hover {
+  background: rgba(255, 0, 0, 0.7);
+  transition: ease-out;
+}
+
+header .navbar_list li a:hover {
+  color: rgba(255, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(131, 51, 0);
+}
+
+.accueil {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Image/FoodTruckTable.jpg);
+  background-size: cover;
+}
+
+.accueil .contenu {
+  max-width: 90%;
+  text-align: center;
+  margin-top: -300px;
+}
+
+.accueil .contenu h2 {
+  margin-top: 450px;
+  color: #000;
+  font-size: 6em;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #ff0000 0%, #000 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+}
+
+.contenu p:nth-child(2) {
+  color: #000;
+  font-size: 1.2em;
+  background: linear-gradient(90deg, #ff0000 0%, #000 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  font-weight: bold;
+}
+
+.btn1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  background: #ff0000;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 450px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.btn2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff0000;
+  background: #000;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 450px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.btn3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff0000;
+  background: #000;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.btn2:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transition: ease-out;
+}
+
+.btn1:hover {
+  background: rgba(255, 0, 0, 0.6);
+  transition: ease-out;
+}
+
+section {
+  padding: 100px;
+}
+
+.apropos {
+  padding-top: 150px;
+}
+
+.KombiBurgerTruck {
+  display: flex;
+  justify-content: center;
+}
+
+.KombiBurgerTruck .texte {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.KombiBurgerTruck .texte h2 {
+  margin-bottom: 20px;
+}
+
+.KombiBurgerTruck .texte p {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  text-align: justify;
+}
+
+.titre-texte {
+  color: black;
+  font-size: 2em;
+  font-weight: 300px;
+  text-transform: capitalize;
+}
+
+.titre-texte span {
+  color: #ff0000;
+  font-size: 1.5em;
+  font-weight: 700px;
+}
+
+.KombiBurgerTruck .image img {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.titre {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #ff0000;
+}
+
+.menu h2{
+  font-size: 2em;
+  margin: 0px;
+}
+.menu .contenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu .contenu .box {
+  width: 350px;
+  margin: 15px;
+  border: 20px solide #fff;
+  box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+}
+
+.menu .contenu .box .imgbox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.menu .contenu .box .imgbox img {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu .contenu .box .HBGtxt {
+  text-align: center;
+  font-weight: 300px;
+  color: #111;
+}
+
+.carte {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("./Image/FoodTruck.jpg");
+  background-size: cover;
+  justify-content: center;
+}
+
+.carte .titre {
+  margin: 30px 0px -75px 0px;
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carte .titre span {
+  animation-direction: normal;
+  animation-duration: 6s;
+  animation-name: glissement;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes glissement {
+  from { margin-left:-110%; } to { margin-left:110%; }
+}
+
+.carte .btn {
+  font-size: 30px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte .btn:hover {
+  letter-spacing: 4px;
+}
+
+.carte .box {
+  display: flex;
+  width: 700px;
+  height: 500px;
+  margin: 0px 40px 40px 40px;
+  border: 10px solide #fff;
+  box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.carte .box-menu {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 800px;
+  margin: 0px 300px 40px 300px;
+  border: 10px solide #fff;
+  box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.carte .box img {
+  display: flex;
+  width: 20rem;
+  margin: 10px;
+  background-color: rgb(178, 179, 184)
+}
+
+.carte .box-menu img {
+  display: flex;
+  width: 45rem;
+  margin: 10px;
+  background-color: rgb(178, 179, 184)
+}
+
+.carte .box .texte-carte {
+  font-weight: 300px;
+  font-size: 1.2em;
+  color: #111;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.carte .box-menu .texte-carte {
+  font-weight: 300px;
+  font-size: 1.2em;
+  color: #111;
+  justify-content: center;
+}
+
+.carte .box .texte-carte h3 {
+  margin: 10px 0px 50px 40px;
+}
+
+.carte .box .texte-carte ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 30px;
+  margin-left: 125px;
+  margin-top: 50px;
+}
+
+.carte .box .texte-carte p {
+  margin: 50px 20px 0px 20px;
+  text-align: justify;
+}
+
+.carte .box-menu .texte-carte h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.carte .box-menu .texte-carte ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  margin-left: 125px;
+}
+
+.carte .box-menu .texte-carte p {
+  margin: 50px 20px 0px 20px;
+  text-align: justify;
+}
+
+.equipe h2 {
+  font-size: 3em;
+}
+
+.equipe .contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.equipe .contenu .box {
+  width: 400px;
+  margin: 50px 75px 0px 75px;
+}
+
+.equipe .contenu .box img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+}
+
+.equipe .contenu .box h3 {
+  color: #111;
+  font-weight: 400;
+  text-align: center;
+  font-weight: bold;
+}
+
+.equipe .contenu .box p {
+  color: #111;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.avis {
+  background-image: url(./Image/bois.jpg);
+  background-size: cover;
+}
+
+.avis .contenu {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.avis .contenu .box {
+  width: 340px;
+  margin: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.avis .contenu .box .imgbox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.avis .contenu .box .imgbox img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.avis .contenu .box .txt {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.avis .contenu .box .txt h3 {
+  color: #ff0000;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.avis .titreblanc .titre-texte {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin: 50px;
+}
+
+.avis .titreblanc p {
+  color: #111;
+}
+
+.contact {
+  background-image: url(./Image/Contact.jpg);
+  background-size: cover;
+  box-shadow: 2px 2px 12px regba(0,0,0, 0.8);
+  width: 100%;
+  background-position: unset;
+}
+
+.contactform {
+  padding: 75px 50px;
+  background-color: #fff;
+  box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38%;
+}
+
+.contactform .inputbox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactform h3 {
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contactform .inputbox input {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contactform .inputbox textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contactform .inputbox input[type="submit"] {
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff0000;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  max-width: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  padding: 20px 40px;
+  border-top: 2px solid rgba(0,0,0, 0.1);
+  background: #fff;
+  text-align: center;
+}
+
+.copyright p:nth-child(1) {
+  color: #333;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1600px) {
+
+  header, header.sticky {
+    padding: 10px 20px;
+  }
+
+  header.navbar li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 300;
+    }
+
+  .navbar_list {
+    display: none;
+  }
+
+  .btn1, .btn2, .btn3 {
+    margin-top: 20px;
+  }
+  section {
+    padding: 20px;
+  }
+
+  .accueil .contenu h2 {
+    font-size: 4em;
+    margin-bottom: 400px;
+  }
+
+  .contenu p:nth-child(2) {
+    font-size: 1.2em;
+  }
+
+  .equipe {
+    margin-top: 0px;
+  }
+
+  .menu {
+    margin-top: 0px;
+  }
+
+  .apropos .KombiBurgerTruck .image img {
+    width: 20em;
+    margin: 10px;
+    display: block;
+    margin: auto;
+  }
+
+  .apropos .KombiBurgerTruck .texte p {
+    width: 100%;
+    display: flex;
+  }
+
+  .apropos .KombiBurgerTruck {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+  }
+
+  .temoignage h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .temoignage p {
+    text-align: center;
+  }
+
+  .temoignage .titreblanc .titre-texte {
+    font-size: 1em;
+  }
+
+  .contactform {
+    margin: auto;
+  }
+
+  .carte .box:first-child {
+    margin-top: 70px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .accueil .contenu {
+    margin-top: 15px;
+  }
+
+  .accueil .contenu h2 {
+    font-size: 3em;
+    margin-top: 0px;
+    margin-bottom: 200px;
+  }
+
+  .carte .titre {
+    margin: 30px 0px 0px 0px;
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .carte .box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 10px;
+  }
+
+  .carte .box img {
+    width: 10rem;
+  }
+
+  .carte .box .texte-carte h3 {
+    margin: 10px 0px 0px 60px;
+  }
+
+  .carte .box .texte-carte ul {
+    margin: 10px;
+    line-height: 20px;
+    align-items: center;
+  }
+
+  .carte .box .texte-carte p {
+    margin: 10px;
+    text-align: justify;
+  }
+
+  .carte .box-menu {
+    width: 1000px;
+    height: 800px;
+    margin: 0px 150px 40px 150px;
+  }
+  .carte .box-menu img {
+    width: 25rem;
+    margin: 10px;
+  }
+
+  .carte .box-menu .texte-carte {
+    font-weight: 100;
+    font-size: 1.2em;
+    color: #111;
+    justify-content: center;
+  }
+}
+
+/*Variables*/
+
+/*Reset*/
+
+/*Basic style*/
+
+.button {
+  display: flex;
+  background-color: black;
+  margin: 10px;
+  width: 20px;
+  display: none;
+}
+/*Navbar*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 65px;
+}
+
+.navbar_list {
+  display: flex;
+  position: fixed;
+  right: 0;
+}
+/*Small devices*/
+
+@media screen and (max-width:1400px) {
+
+  .navbar_list {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .show-nav .navbar_list {
+    width: 50%;
+    height: 500px;
+  }
+  .show-nav .bar {
+    with: 0;
+    background: transparent;
+  }
+  .show-nav .bar::before {
+    transform:rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform:rotate(-45deg);
+  }
+  .navbar_li > a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    transition: all .4s ease-in-out;
+    color: red;
+  }
+  .navbar_li > a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .button {
+    display: block;
+    position: fixed;
+    right: 0;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .btn-reserve {
+    width: 200px;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 6px;
+    background: #ff0000;
+    border-radius: 3px;
+  }
+  .bar::before, .bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 45px;
+    height: 6px;
+    background: #ff0000;
+    border-radius: 3px;
+  }
+  .bar::before {
+    transform: translateY(-12px);
+  }
+  .bar::after {
+    transform: translateY(12px);
+  }
+
+
+
+
+
+}
+
+    /*toggle*/
+
+    /*bonus- animations*/
+
+/*Medium devices*/
+/*
+@media screen and (min-width:768px) {
+  .navbar_li > a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #00ff00;
+    transition: width 0.4s;
+  }
+  .navbar_li:hover > a::after {
+    width: 100%;
+  }
+}
+*/
